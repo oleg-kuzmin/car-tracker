@@ -1,0 +1,23 @@
+@use '@/shared/mixins' as *;
+
+.mapTrack {
+  position: relative;
+  width: 80vw;
+  max-width: 1920px;
+  height: 80vh;
+  max-height: 1080px;
+  border-radius: 9px;
+  background-color: var(--color-grey-600);
+}
+
+.mapContainer {
+  height: 100%;
+  border-radius: 9px;
+  &:focus {
+    outline: none;
+  }
+}
+
+:global(.leaflet-control-attribution) {
+  display: none;
+}

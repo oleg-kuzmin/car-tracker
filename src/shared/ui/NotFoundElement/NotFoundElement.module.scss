@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.notFoundElement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}

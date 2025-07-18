@@ -1,0 +1,49 @@
+@mixin effect-focus {
+  &:focus-visible {
+    border-radius: 2px;
+    outline: var(--white) 2px solid;
+  }
+}
+
+@mixin effect-hover {
+  @media screen and (hover: hover) {
+    transition: color var(--time-hover);
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+@mixin effect-hover-accent {
+  @media screen and (hover: hover) {
+    transition: color var(--time-hover);
+    &:hover {
+      color: var(--color-main-accent);
+    }
+  }
+}
+
+@mixin effect-hover-button {
+  @media screen and (hover: hover) {
+    transition: background-color var(--time-hover);
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
+
+@mixin effect-hover-button-close {
+  @media screen and (hover: hover) {
+    transition: background-color var(--time-hover);
+    &:hover {
+      background-color: var(--color-grey-100);
+    }
+  }
+}
+
+@mixin effect-focus-outline-main-accent {
+  &:focus-visible {
+    border-radius: 4px;
+    outline-color: var(--color-main-accent);
+  }
+}

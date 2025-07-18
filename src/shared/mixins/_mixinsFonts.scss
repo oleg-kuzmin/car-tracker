@@ -1,0 +1,34 @@
+@mixin font-apadtive-size($_minFontSize, $_maxFontSize, $_minWidth, $_maxWidth) {
+  font-size: calc(
+    #{$_minFontSize + px} + calc($_maxFontSize - $_minFontSize) *
+      ((100vw - #{$_minWidth + px}) / calc($_maxWidth - $_minWidth))
+  );
+}
+
+@mixin font-extrabold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 800;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-bold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 700;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-semibold($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 600;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-regular($_fontSize, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-weight: 400;
+  font-size: $_fontSize;
+  line-height: $_lineHeight;
+  letter-spacing: $_letterSpacing;
+}

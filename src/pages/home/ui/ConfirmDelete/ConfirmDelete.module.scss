@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.confirmDelete {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}

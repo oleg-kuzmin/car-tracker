@@ -1,0 +1,42 @@
+@use '@/shared/mixins' as *;
+
+.homePage {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+  }
+
+  &__title {
+    padding-left: 4px;
+    color: var(--color-grey-600);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 20px 0;
+    background-color: var(--color-grey-100);
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    & address {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-style: normal;
+    }
+
+    & a {
+      text-decoration: underline;
+      @include effect-hover-accent;
+    }
+  }
+}
