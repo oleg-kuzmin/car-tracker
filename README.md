@@ -22,4 +22,4 @@ SPA-приложение для desktop на React+Typescript (Vite) - трек�
 
 ## Ссылки
 
-- [Vercel Pages](https://door-locks-vite.vercel.app)
+- [Github Pages](https://oleg-kuzmin.github.io/car-tracker/)
