@@ -3,7 +3,7 @@ import { HomePage } from '@/pages/home';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/car-tracker/',
     element: <HomePage />,
   },
 ]);
