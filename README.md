@@ -1,4 +1,4 @@
-# Car tracker
+# Car Tracker
 
 SPA-приложение для desktop на React+Typescript (Vite) - трекинг автомобилей.
 
